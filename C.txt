@@ -1,0 +1,3580 @@
+//Inicio de programa default
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+    return 0;
+
+}
+
+//Funcao main
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    printf("Meu primeiro programa.\n");
+    return 0;
+}
+
+//Fazer comentarios em C
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    //fazer um comentário
+
+    /*
+
+
+    */
+
+    setlocale(LC_ALL, "Portuguese");
+    printf(" TESTANDO ACENTO: Ç, á, é, ã, í, ú, ê, \n\n");
+
+
+    return 0;
+}
+
+
+// Conceito e Criação de Variaveis
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+    int minhaIdade;
+    minhaIdade = 23;
+
+    printf("Minha idade é = %i\n", minhaIdade);
+
+	system("pause");
+    return 0;
+}
+
+//Utilizando Variaveis
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+    int minhaIdade, maeIdade, paiIdade;
+    
+    minhaIdade = 23;
+	maeIdade = 48;
+	paiIdade = 49;
+
+    printf("Minha idade é = %i\nPai idade = %i\nMae idade = %i\n",
+		    minhaIdade, paiIdade, maeIdade);
+
+	system("pause");
+    return 0;
+}
+
+//Operacoes Matematicas
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+    int minhaIdade, maeIdade, paiIdade, irmaoIdade, idadeTotal; 
+    
+    minhaIdade = 20;
+    maeIdade = 40;
+    paiIdade = 45;
+    irmaoIdade = 15;
+    
+	idadeTotal = minhaIdade + maeIdade + paiIdade + irmaoIdade;
+
+    printf("A idade total é = %i\n", idadeTotal);
+
+	system("pause");
+    return 0;
+}
+
+
+//Função Scanf
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+    int base, altura, area;
+    base = altura = area = 0;
+    
+    printf("\nDigite o valor da base:\n");
+    scanf("%i", &base);
+    
+    printf("\nDigite o valor da altura:\n");
+    scanf("%i", &altura);
+    
+    area = base * altura;
+	
+	printf("\nO valor da área do retangulo é = %i\n", area);
+	    
+    return 0;
+}
+
+//VariaveisTipoFloatChar
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+    int inteira = 10;
+    float decimal = 10.5;
+    char caractere = '0';
+	
+	printf("%i\n", inteira);
+	printf("%0.2f\n", decimal);
+	printf("%c\n", caractere);
+	    
+    return 0;
+    
+}
+
+//Utilizando Variaveis do tipo float
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+    float num1 = 5;
+	float num2 = 2;
+	float resultado = num1 / num2;
+	
+	printf("%0.2f\n", resultado);
+	   
+    return 0;
+    
+}
+
+//Ciclo For - Laco for - Repeticao for
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+	int contador;
+	int numero = 1;
+	
+//  for(valor inicial, rode enquanto, incremento)	
+	for (contador = 1; contador <=10; ++contador){
+		printf("teste\n");		
+	}
+	   
+    return 0;
+    
+}
+
+//While
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+	int contador = 1;
+	
+	while (contador <=5){
+		printf("%i\n", contador);
+		++contador;		
+	}
+	   
+    return 0;
+    
+}
+
+//Fatorial
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+	int numero;
+	int fatorial;
+	int resposta = 1;
+			
+	printf("Digite um número para descobrir seu fatorial\n");
+	scanf("%i", &fatorial);
+	
+	numero = fatorial;
+	
+	for (; fatorial > 0 ; --fatorial){
+		
+	//resposta = resposta * fatorial; 	
+	resposta *= fatorial;
+	
+	}
+
+	printf("O fatorial de %i é: %i\n", numero, resposta);
+	
+	return 0;
+    
+}
+
+//DoWhile
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+	
+	//Verifica a condição, depois faça o que é pedido!
+	int i = 0;
+	while (i != 0){
+		printf("Teste\n");
+	}
+	
+	//Faça primeiro o quer é pedido, depois verifica a condição!
+	do{
+		printf("Teste 2\n");
+	}while (i != 0);
+	
+	return 0;
+    
+}
+
+//If else
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+	int idade;
+	
+	printf("Favor informar idade:\n");
+	scanf("%i", &idade);
+	
+	if(idade < 18){
+		printf("Bebidas alcoólocas não estão liberadas.\n");
+	} else {
+		printf("Bebidas alcoólicas estão liberadas.\n");
+	}	
+
+	return 0;
+    
+}
+
+//Como utilizar multiplos Else if
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+	int idade;
+	printf("informar idade\n");
+	scanf("%i", &idade);
+	
+	if(idade <= 5)
+		printf("bebê\n");
+	else if(idade > 5 && idade <= 10)
+		printf("Criança\n");
+	else if(idade > 10 && idade <= 18)
+		printf("Adolescente\n");
+	else if(idade > 18 && idade <= 50)
+		printf("Adulto\n");
+	else if(idade > 50)
+		printf("Idoso\n");
+
+	return 0;
+    
+}
+
+//Switch
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+	int i;
+	
+	printf("Insira um número inteiro de 1 a 5\n");
+	scanf("%i", &i);
+
+	switch (i){
+		case 1:
+			printf("primeiro\n");
+			break;
+		case 2:
+			printf("segundo\n");
+			break;
+		case 3:
+			printf("terceiro\n");
+			break;
+		case 4:
+			printf("quarto\n");
+			break;
+		case 5:
+			printf("quinto\n");
+			break;
+		default:
+			printf("Opção inválida!");
+	}
+
+	return 0;
+    
+}
+
+//Se um numero é divisivel por outro
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+	int num1, num2;
+	printf("Digite 2 números inteiros:\n");
+	scanf("%i %i", &num1, &num2);
+	
+	if(num2 == 0)
+		printf("Divisao por 0 não é permitido.\n");
+		
+	if (num1 % num2 != 0)
+		printf("%i Não é divisivel por %i \n", num1, num2);
+	
+	else{
+		if (num1 % num2 == 0){
+			printf("%i é divisivel por %i \n", num1, num2);
+			}
+			
+	}
+
+	return 0;
+    
+}
+
+//Inverter um numero / operador Resto %
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+	int numero, cifra;
+	
+	printf("Digite um número inteiro:\n");
+	scanf("%i", &numero);
+	
+	if (numero >=0){
+		do{
+			cifra = numero % 10;
+			printf("%i", cifra);
+			numero /= 10;
+		} while (numero !=0);
+			printf("\n");
+	}
+	
+	else if (numero < 1){
+		numero = numero * -1;
+		
+		printf("-");
+		
+		do{
+			cifra = numero % 10;
+			printf("%i", cifra);
+			numero /= 10;
+		} while (numero !=0);
+			printf("\n");
+	}
+		
+	return 0;
+    
+}
+
+//OperadorCondicional?(interrogacao)
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+	int num1 = 10;
+	int num2 = 20;
+	
+	int resposta;
+	
+	num1 < num2 ? printf("sim\n") : printf("nao\n");
+			
+	num1 < num2 ? resposta = 10 : resposta = -10;
+	
+	printf("%i\n", resposta);		
+			
+	return 0;
+    
+}
+
+//Revisao Tipo de Variaveis
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <stdbool.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+	/*
+	char variavelChar = 'a';
+	printf("%c\n", variavelChar);
+	scanf("%c", &variavelChar);
+	printf("%c\n", variavelChar);
+	*/
+	
+	/*
+	bool variavelBoll = false;
+	//aceita apenas 0 e 1
+	//true ou false
+	// 0 = não
+	// 1 = sim
+	//Quando utilizar tipo bool, incluir a biblioteca <stdboll.h>
+	printf("%i\n", variavelBoll);
+	*/
+	
+	/*
+	int variavelInt = 10;
+	//long int variavelInt = 1045678912345; Para números extensos
+	//const int variavelInt = 10; Declarando um número que não poderá alterar
+	printf("%i\n", variavelInt);
+	scanf("%i", &variavelInt);
+	printf("%i\n", variavelInt);
+	*/
+	
+	/*
+	float variavelFloat = 10.10;
+	printf("%f\n", variavelFloat);
+	scanf("%f", &variavelFloat);
+	printf("%f\n", variavelFloat);
+	*/
+	
+	/*
+	double variavelDouble = 10.10;
+	//const double variavelDouble = 10.10; Valor fixado
+	//unsigned double variavelDouble = 10.10; Limita apenas para valor positivos
+	printf("%f\n", variavelDouble);
+	scanf("%lf", &variavelDouble);
+	printf("%f\n", variavelDouble);
+	*/
+			
+	return 0;
+    
+}
+
+//Ciclos Contendo Outros Ciclos
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <stdbool.h>
+
+int main(void){
+	
+    setlocale(LC_ALL, "Portuguese");
+
+	int i, j;
+
+	for (i = 1; i <= 10; ++i ){
+		printf("**Volta %i**\n", i);
+		for(j = 1; j <= 10; ++j){
+		printf("Ponto %i\n", j);	
+		}
+		printf("\n");
+	}
+			
+	return 0;
+    
+}
+
+//Introducao Vetores
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+int main(void){
+	
+    setlocale(LC_ALL, "Portuguese");
+
+	int nota [5];
+	
+	nota[0] = 10;
+	nota[1] = 5;
+	nota[2] = 4;
+	nota[3] = 2;
+	nota[4] = 7;
+	
+	printf("%i\n", nota[4]);
+	
+	system("pause");//É necessário a biblioteca <stdlib.h>
+	
+	return 0;
+    
+}
+
+//Declaracao Vetores
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+int main(void){
+	
+    setlocale(LC_ALL, "Portuguese");
+
+	int vetor [5] = {5, 2, 4, 1, };
+	//vetor[0] = 1;
+	//int vetor [5] = {0} Zera todos os valores do Vetor
+	
+	int i;
+	
+	for (i = 0; i < 5; ++i){
+		printf("%i\n", vetor[i]);
+	}
+	
+	system("pause");//É necessário a biblioteca <stdlib.h>
+	
+	return 0;
+    
+}
+
+// Manipulando Vetores
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+int main(void){
+	
+    setlocale(LC_ALL, "Portuguese");
+
+	float notas[5] = {0};
+	float total = 0;
+	float media = 0;
+	int i;
+	
+	printf("Insira 5 notas:\n");
+	
+	for (i = 0; i < 5; ++i)
+	scanf("%f\n", &notas[i]);
+	
+	for (i = 0; i < 5; ++i)
+		total += notas[i];
+	
+	media = total / 5;
+	
+	printf("A media do aluno é: %0.2f\n\n", media);
+	
+	system("pause");//É necessário a biblioteca <stdlib.h>
+	
+	return 0;
+    
+}
+
+//Introducao Matrizes
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+int main(void){
+	
+    setlocale(LC_ALL, "Portuguese");
+
+	int matriz [3] [3] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+	// linhas x colunas (bidimencional)
+	
+	//int matriz [3] [3] = {{1, 2, 3}
+	//						{4, 5, 6}
+	//						{7, 8, 9}};
+	
+	printf("%i\n", matriz [0] [0]);
+		
+	system("pause");//É necessário a biblioteca <stdlib.h>
+	
+	return 0;
+    
+}
+
+// Manipulando Matrizes
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+int main(void){
+	
+    setlocale(LC_ALL, "Portuguese");
+    
+    int m;
+    int n;
+
+	int matriz [5] [5] = {{ 1,  2,  3,  4,  5},
+						  { 6,  7,  8,  9, 10},
+						  {11, 12, 13, 14, 15},
+						  {16, 17, 18, 19, 20},
+						  {21, 22, 23, 24, 25}};
+	
+	for (m= 0; m < 5; ++m){
+		for (n = 0; n < 5; ++n){
+			printf("\t%i ", matriz[m] [n]);
+			}
+		
+		printf("\n");
+			
+	}					  
+	
+	system("pause");//É necessário a biblioteca <stdlib.h>
+	
+	return 0;
+    
+}
+
+// Revisao Vetores/Matrizes
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+int main(void){
+	
+    setlocale(LC_ALL, "Portuguese");
+          
+    const int numeroDeAlunos = 4;
+	const int bimestresAnuais = 4;
+	float notasAlunos[4][4] = {0};
+	float mediasAlunos [4]= {0};
+	float media = 0;
+	int aluno, notas;
+    
+    printf("Insira as 4 notas do aluno 1:\n");
+    for (aluno = 0; aluno < numeroDeAlunos; ++aluno){
+	   	for(notas = 0; notas < bimestresAnuais; ++notas){
+			scanf("%f", &notasAlunos[aluno][notas]);
+			
+			media += notasAlunos[aluno][notas];	   		
+		   }
+		
+		mediasAlunos[aluno] = media / bimestresAnuais;
+		media = 0;
+		
+		if (aluno+2 > numeroDeAlunos)
+            break; // força a interrupção do ciclo for neste ponto se aluno for 5
+		
+		printf("Insira as notas do aluno %d:\n", aluno +2);
+	}
+	
+	for(aluno = 0; aluno < numeroDeAlunos; aluno++)
+		printf("As medias do aluno %d é : %.2f\n", aluno +1, mediasAlunos [aluno]);		
+	
+	system("pause");//É necessário a biblioteca <stdlib.h>
+	
+	return 0;
+	
+}
+
+// Introdução Funções
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+int main(){
+	
+    setlocale(LC_ALL, "Portuguese");
+    
+    void imprimaMensagem(void);
+    imprimaMensagem();
+		 
+	return 0;
+	
+}
+
+void imprimaMensagem(void){
+	
+	printf("teste");	
+	
+}
+
+//Outra forma
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+void imprimaMensagem(void){
+	
+	printf("teste");	
+	
+}
+
+int main(){
+	
+    setlocale(LC_ALL, "Portuguese");
+    
+    imprimaMensagem();
+		 
+	return 0;
+	
+}
+
+// Como utilizar Funcoes
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+float calcularAreaRetang (float base, float altura){
+	float area = base * altura;
+	return area;
+}
+
+int main (void){
+	
+    setlocale(LC_ALL, "Portuguese");
+    
+    float area = calcularAreaRetang (10.0, 20.0);
+		 
+	printf("A área do retangulo é: %0.2f", area);
+	
+	return 0;
+	
+}
+
+// Funcao e Variavel Local Automatica
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+void teste(void){
+	
+	int variavelLocalAutomatica = 2;
+	variavelLocalAutomatica *= 2;
+	
+	printf("%i\n", variavelLocalAutomatica);
+	
+}
+
+
+int main (void){
+	
+    setlocale(LC_ALL, "Portuguese");
+    
+    teste();   
+	teste();
+	teste(); 
+	
+	return 0;
+	
+}
+
+// Funcao e Variavel Local Estatica
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+void teste(void){
+	
+	int variavelLocalAutomatica = 2;
+	variavelLocalAutomatica *= 2;
+	
+	static int variavelLocalEstatica = 2;
+	variavelLocalEstatica *= 2;
+	
+	printf("Local Automática = %i\n", variavelLocalAutomatica);
+	printf("Local Estática   = %i\n\n", variavelLocalEstatica);
+	
+}
+
+
+int main (void){
+	
+    setlocale(LC_ALL, "Portuguese");
+    
+    teste();   
+ 	teste();
+ 	teste();
+	
+	return 0;
+	
+}
+
+// Funcao e Variavel Global
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+int gVariavelGlobal = 2;
+
+void teste(void){
+	
+	int variavelLocalAutomatica = 2;
+	variavelLocalAutomatica *= 2;
+	
+	static int variavelLocalEstatica = 2;
+	variavelLocalEstatica *= 2;
+	
+	gVariavelGlobal *= 2;
+	
+	printf("Local Automática = %i\n", variavelLocalAutomatica);
+	printf("Local Estática   = %i\n\n", variavelLocalEstatica);
+	printf("Global = %i\n\n", gVariavelGlobal);
+	
+}
+
+
+int main (void){
+	
+    setlocale(LC_ALL, "Portuguese");
+    
+    printf("Global = %i\n\n", gVariavelGlobal);
+    
+    teste();   
+ 	teste();
+ 	teste();
+	
+	return 0;
+	
+}
+
+// Formatacao de Ouput
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+int main (void){
+	
+	int intVar = 9999999;
+	int intVar2 = 10;
+	double doubleVar = 100.123456789;
+	
+	//Formatacao variaveis inteiras
+	printf("Variavel inteira (%%d) = %d\n", intVar);
+	printf("Variavel inteira (%%i) = %i\n", intVar);
+	printf("Variavel inteira (%%x) = %x\n", intVar);//Está na base 16
+	printf("Variavel inteira (%%o) = %o\n", intVar);//Esta na base 8	
+	printf("\n");
+	
+	//Formatacao variaveis float e double
+	printf("Variavel double (%%f) = %0.2f\n", doubleVar);
+	printf("Variavel double (%%e) = %e\n", doubleVar);
+	printf("Variavel double (%%g) = %g\n", doubleVar);//Está na base 16
+	printf("Variavel double (%%a) = %a\n", doubleVar);//Esta na base 8	
+	printf("\n");
+	
+	system("pause");
+	
+	return 0;
+}
+
+// Funcoes que Chamam Outras Funcoes
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+
+float somaDeDigitos(float num1, float num2){
+	
+	float valorAbsoluto (float x);
+	
+	if(num1 < 0){
+		num1 = valorAbsoluto(num1);
+	}
+	if(num2 < 0){
+		num2 = valorAbsoluto(num2);
+	}
+	
+	return num1 + num2;
+}
+
+float valorAbsoluto (float x){
+	
+	return x * -1;
+	
+}
+
+
+int main (void){
+	
+	setlocale(LC_ALL, "Portuguese");
+	
+	float somaDeDigitos(float num1, float num2);
+	float a, b, soma;
+	
+	printf("Digite 2 numeros: \n");
+	scanf("%f", &a);
+	scanf("%f", &b);
+	
+	soma = somaDeDigitos(a, b);
+	
+	printf("A soma é: %.2f\n\n", soma);
+	
+	system("pause");
+	return 0;
+}
+
+// Funcoes Recursivas
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+int fatorial (int x){
+	int resultado;
+	if(x == 0){
+		resultado = 1;
+	}else {
+		resultado = x * fatorial(x -1);	
+	}
+	return resultado;
+}
+
+
+int main (void){
+	
+	setlocale(LC_ALL, "Portuguese");
+	
+	int fatorial (int x);
+	int numero, resultado;
+	
+	printf("Digite um número inteiro:\n");
+	scanf("%i", &numero);
+	
+	resultado = fatorial(numero);
+		
+	printf("O fatorial é %i\n\n", resultado);
+		
+	system("pause");
+	return 0;
+}
+
+// Funcoes que recebem vetores como argumento
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+void ordemCrescente(int vetor[], int n){
+		
+	int i, j, temporaria;
+		
+	for (i = 0; i < n; ++i){
+		for(j = i + 1; j < n; ++j){
+			if(vetor[i] > vetor[j]){
+			temporaria = vetor[i];
+			vetor[i] = vetor[j];
+			vetor[j] = temporaria;
+			}
+		}
+	}		
+}
+
+int main (void){
+	
+	setlocale(LC_ALL, "Portuguese");
+	
+	int vetor [10] = {6, 4, 1, 9, 8, 0, 5, 7, 3, 2};
+	int i;
+	
+	void ordemCrescente(int vetor[], int n);	
+	ordemCrescente(vetor, 10);
+	
+	for(i = 0; i < 10; ++i){
+		printf("%i ", vetor[i]);
+	}
+	
+	printf("\n\n");	
+	system("pause");
+	return 0;
+}
+
+//Funcoes que recebem Matrizes como Argumento
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+int main(void){
+    setlocale(LC_ALL, "portuguese");
+    system("color F0");
+
+        void FunctionScanf(int vet1[]);
+        void FunctionPrintf(int y, int vet1[]);
+        int x = 10;
+        int vetor[3];
+        int c2;
+
+    FunctionScanf(vetor);
+
+            printf("\n\t\t OS NÚMEROS DIGITADOS FORAM: \n");
+            printf("\n\t\t\t VALOR DE X: [%i] \n", x);
+            printf("\t\t\t VALORES DO VETOR DE 3 BLOCOS: \n\t\t\t ");
+            for(c2 = 0; c2 < 3; ++c2){
+                printf("[%i] ", vetor[c2]);
+            }
+            printf("\n\n\n");
+
+            printf("\t\t Variável INT X na Função principal = [%i] \n", x);
+            printf("\t\t Valor do Vetor na Posição [0] pela Função principal = [%i] \n", vetor[0]);
+
+    FunctionPrintf(x, vetor); 
+// INTRODUZ O VALOR DA VARIÁVEL LOCAL X DA FUNÇÃO (main) NA VARIÁVEL LOCAL Y DA
+// FUNÇÃO (FunctionPrintf) E OS VALORES DO VETOR LOCAL (vetor) DENTRO DO VETOR 
+// (vet1) DA FUNÇÃO (FunctionPrintf)  
+
+            //printf("\n\n\ \n\n\n");
+
+    system("pause");
+    return 0;
+}
+
+void FunctionScanf(int vet1[]){
+ // INTRODUZ 1 VALOR EM CADA UM DOS 3 BLOCOS DO vetor[3]
+
+	int c1;
+	
+    printf("\n\t\t DIGITE 3 NÚMEROS PARA O VETOR DE 3 BLOCOS: ...\n\n");
+    for(c1 = 0; c1 < 3; ++c1){
+        printf("\t\t ");
+        scanf("%i", &vet1[c1]);
+    }
+
+}
+
+void FunctionPrintf(int y, int vet1[]){
+    y += y;
+    vet1[0] += vet1[0];
+
+    printf("\n\n\t\t Variável X INT na Função Print é: = [%i] \n", y);
+    printf("\t\t O Valor do Vetor na posição [0] pela Função Print é: = [%i] \n\n", vet1[0]);
+} 
+
+//Introducao Estruturas
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+int main(void){
+    setlocale(LC_ALL, "portuguese");
+    system("color F0");
+    
+    struct horario{
+    	
+    	int horas;
+    	int minutos;
+    	int segundos;
+    };
+    
+    struct horario agora;
+    
+    agora.horas = 15;
+    agora.minutos = 17;
+    agora.segundos = 30;
+    
+    printf("\t\t%i horas: %i min: %i segundos\n\n", agora.horas, agora.minutos, agora.segundos);
+        
+        system("pause");
+    return 0;
+}
+
+// Manipulando Estruturas
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+int main(void){
+    setlocale(LC_ALL, "portuguese");
+    system("color F0");
+    
+    struct horario{
+    	int horas;
+    	int minutos;
+    	int segundos;
+    	double teste;
+    	char letra;
+    };
+    
+    struct horario agora;
+    agora.horas = 15;
+    agora.minutos = 17;
+    agora.segundos = 30;
+    
+    struct horario depois;
+    depois.horas = agora.horas + 10;
+    depois.minutos = agora.minutos;
+	depois.segundos = agora.segundos;
+	depois.teste = 50.55 / 123;
+	depois.letra = 'a';
+	 
+    printf("\t\t%i hrs: %i min: %i seg \n\n", depois.horas, depois.minutos, depois.segundos);
+    printf("\t\tResultado da divisão: %.2f\n\n", depois.teste);
+    printf("\t\tConteúdo da váriável Letra: %c\n\n", depois.letra);
+        
+        system("pause");
+    return 0;
+}
+
+//Casting na Linguagem C
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+int main(void){
+    setlocale(LC_ALL, "portuguese");
+    system("color F0");
+    
+	int x = 16;
+	int y =3;
+					  //Casting	resultado será 5.333333, sem o casting seria 5.0000							
+	float resultado = (float)x / y;
+	
+	printf("%f\n", resultado);
+        
+    system("pause");
+    return 0;
+}
+
+// Passar e receber estruturas a uma funcao
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+struct horario{ 
+  // estrutura global do tipo horario contendo 3 variaveis do tipo int
+  int horas, minutos, segundos; 
+ };
+
+int main(){
+    setlocale(LC_ALL, "portuguese");
+    system("color F0");
+    
+ // declara que existe uma função estruct do 
+ //tipo horario de nome teste que retorne uma struct do tipo horario de nome qualquer.
+ struct horario teste(struct horario x); 
+ 
+ // declara uma struct do tipo horario chamada agora
+ struct horario agora;
+ 
+ // atribui os valores das 3 variaveis da struct horario agora
+ agora. horas = 10;
+ agora. minutos = 42;
+ agora. segundos = 58;
+ 
+ //declara uma struct do tipo horario chamada proxima
+ struct horario proxima;
+ 
+ // nesse momento para saber o valor de proxima o //compilador executa o que está na função teste sabendo que ela deve retornar a struct 
+ //horario agora, dentro de teste como podemos ver abaixo a primeira coisa a ser 
+ //executada é um printf retornando os valores das três variaveis de AGORA e depois 
+ //altera essas três variaveis e o comando return faz com que as variaveis assumam 
+ //esses novos valores, ou seja, aparece na tela "10, 42, 58" e logo depois muda esses valores para "100, 100, 100"
+ 
+ proxima = teste(agora);
+ printf("\t\t%i : %i : %i\n\n", proxima. horas, proxima. minutos, proxima. segundos); 
+// esse printf retorna o valor das variaveis de proxima, proxima = teste(agora), ou seja 
+//quando alteramos os valores de "10, 42, 58" dentro da função teste para "100, 100, //100" mudamos também os valores das variaveis contidas em proxima. assim esse 
+//printf retorna "100, 100, 100"
+      
+    system("pause");
+    return 0;
+}
+
+struct horario teste(struct horario x){
+ 
+ printf("\t\t%i : %i : %i\n", x. horas, x. minutos, x. segundos);
+ 
+ x. horas = 100;
+ x. minutos = 100;
+ x. segundos = 100;
+ 
+ return x;
+}
+
+//Inicializando Estruturas
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+int main(){
+    setlocale(LC_ALL, "portuguese");
+    system("color F0");
+    
+    struct horario{
+    	int horas;
+    	int minutos;
+    	int segundos;
+    //segunda forma de declarar as variaveis	
+	}agora = {10, 20, 30};
+	
+	//terceira forma de declarar as variaveis
+	//struct horario agora = {10, 20, 30};
+	
+	//quarta forma de declarar as variaveis
+	//struct horario agora = {.segundos = 30, .minutos = 20, .horas = 10};
+		
+	//Primeira forma de declarar as variaveis
+	//struct horario agora;
+	//agora.horas = 10;
+	//agora.minutos = 20;
+	//agora.segundos = 30;
+       
+    printf("\t\t%i hrs: %i min: %i seg\n\n", agora.horas,
+							 agora.minutos,
+							 agora.segundos);   
+       
+    system("pause");
+    return 0;
+}
+
+
+//Vetores de Estruturas
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+int main(){
+    setlocale(LC_ALL, "portuguese");
+    system("color F0");
+    
+    struct horario{
+    	int hora;
+    	int minuto;
+    	int segundo;
+    };
+	
+     struct horario teste[5] = { {10, 20, 30}, {20, 30, 40}, {30, 40, 50}, {40, 50, 60}, {50, 60, 70} }; 
+	 
+	  int i;
+	  for(i = 0; i < 5; ++i){
+	  	printf("\t\t%i hrs: %i min: %i seg\n\n", teste[i].hora, 
+	 						   				     teste[i].minuto, 
+	 						                     teste[i].segundo);
+	  }
+	 
+	 //Um forma de declarar as variaveis do vetor
+	 //teste[0].hora = 10;
+	 //teste[0].minuto = 20;
+	 //teste[0].segundo = 30;
+	 //
+	 //printf("\t\t%i hrs: %i min: %i seg\n\n", teste[0].hora = 10,
+	 //						   				  teste[0].minuto = 20,
+	 //						                  teste[0].segundo = 30);
+       
+    system("pause");
+    return 0;
+}
+
+
+// Revisao Estruturas
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+
+struct horario{
+	int hora;
+	int minuto;
+	int segundo;
+};
+
+int main(){
+    setlocale(LC_ALL, "portuguese");
+    system("color F0");
+    
+    void receberHorarios(struct horario lista[5]);
+    void printfHorarios(struct horario lista[5]);
+    struct horario listaHorarios[5];
+    
+    receberHorarios(listaHorarios);
+    printfHorarios(listaHorarios);
+    
+    system("pause");
+    return 0;
+}
+
+void receberHorarios(struct horario lista[5]){
+ 	
+	int i;
+	for(i = 0; i < 5; ++i){
+		printf("\t\tDigite o %i º horário (hh:mm:ss): ", i + 1);
+		scanf("%i:%i:%i\n", &lista[i].hora,
+							&lista[i].minuto,
+							&lista[i].segundo);
+	}
+
+}
+	
+void printfHorarios(struct horario lista[5]){
+	
+	int i;
+	for(i = 0; i < 5; ++i){
+		printf("\t\tO %i º horário é = %i hh: %i mm: %iss \n", i + 1,
+												    lista[i].hora,
+							   					    lista[i].minuto,
+							   					    lista[i].segundo);
+	}
+
+}
+
+
+OUTRO EXEMPLO
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#define N 5
+
+struct horario{
+ int hora;
+ int minuto;
+ int segundo;
+};
+
+void receberHorarios(struct horario lista[N]){
+
+ int indice;
+
+ for(indice = 0; indice < 5; indice++){
+  printf("\t\t\t[%dº] horario (hh mm ss) : ", indice + 1);
+  scanf("%d %d %d",&lista[indice].hora,&lista[indice].minuto, &lista[indice].segundo);
+ }
+}
+
+void printHorarios(struct horario lista[N]){
+
+ int indice;
+
+ for(indice = 0; indice < 5; indice++){
+  printf("\t\t\t\t\t%d:%d:%d\n",lista[indice].hora, lista[indice].minuto, lista[indice].segundo);
+ }
+}
+
+int main(){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+
+ struct horario listaHorarios[N];
+
+ receberHorarios(listaHorarios);
+ printHorarios(listaHorarios);
+
+ return 0;
+}
+
+OUTRA FORMA
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <conio.h>
+
+struct horario{
+       int hora;
+       int minuto;
+       int segundo;
+       };
+
+void receberHorarios(struct horario lista[5]){
+     int i;
+     
+     for(i = 0; i < 5; i++)
+     {
+           printf("\t\t\t\tInforme o %d º horário (hh:mm:ss): ", i + 1);
+           scanf("%d:%d:%d", &lista[i].hora, &lista[i].minuto, &lista[i].segundo);
+     }
+     
+     }
+
+void printfHorarios(struct horario lista[5]){
+     int i;
+     
+     for(i = 0; i < 5; i++)
+     {
+           
+           printf("\t\t\t\t\tO %d º horário é: %d:%d:%d\n", i + 1, lista[i].hora, lista[i].minuto, lista[i].segundo);
+     }
+     
+     
+     }
+
+int main(){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+
+ 	//void receberHorarios(struct horario lista[5]);
+    //void printfHorarios(struct horario lista[5])
+    struct horario listaHorarios[5];
+    
+    receberHorarios(listaHorarios);
+    printfHorarios(listaHorarios);
+
+	getch();
+    return 0;
+}
+
+//Introducao Strings / Vetores de Caracteres
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+
+	char teste[] = {'b', 'r', 'a', 's', 'i', 'l'};
+	
+	int i;
+	for(i = 0; i < 6; ++i){
+		printf("%c", teste[i]);
+	}
+	printf("\n");
+
+	system("pause");
+    return 0;
+}
+
+
+// Concatenar Strings (lógica)
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+
+	void concatenarStrings(char string1[], int t1,
+						   char string2[], int t2,
+						   char string3[]);
+	
+	char palavra1[] = {'p', 'a', 'o', ' '};
+	char palavra2[] = {'m', 'o', 'r', 't', 'a', 'd', 'e', 'l', 'a' };
+	char novaPalavra[13];
+	
+	concatenarStrings(palavra1, 4, palavra2, 9, novaPalavra);
+		
+	int i;
+	for (i = 0; i < 13; ++i){
+		printf("%c", novaPalavra[i]);
+	}
+	
+	printf("\n");
+	system("pause");
+    return 0;
+}
+
+void concatenarStrings(char string1[], int t1,
+					   char string2[], int t2,
+					   char string3[]){
+	int i, j;
+	for(i = 0; i < t1; ++i){
+		string3[i]	 = string1[i];
+	}
+					   	
+	for(j = 0; j < t2; ++j){
+		string3[t1 + j] = string2[j];			
+	}
+	
+}	
+
+// Declarar e inicializar strings
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+
+	//Formas de declarar Strings
+	
+	//char palavra[6] = {'B', 'r', 'a', 's', 'i', 'l'}; //Sem o caracter nulo, não é impresso corretamente. \0
+	//char palavra[] = {'b', 'r', 'a', 's', 'i', 'l'};  //Sem o caracter nulo, não é impresso corretamente. \0
+	//char palavra[7] = {"Brasil\0"};
+	//char palavra[] = {"Brasil\0"};
+	char palavra[] = "Brasil\0";
+	
+	
+	//char palavra[] = "Brasil";
+	//Quantos caracteres tem acima?
+	//Resposta certa 7, por causa do \0 (considera apenas um)	
+	
+	//Carcarter nulo
+	//   \0
+	
+	printf("\t\t%s\n", palavra);	
+
+	system("pause");
+    return 0;
+}
+
+// Contar Caracteres de uma Strings
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+
+	int tamanhoString(char string []);
+	char stringUsuario[20];
+
+	printf("Digite uma palavra (string): \n");
+	scanf("%s", stringUsuario);
+
+	int num = tamanhoString(stringUsuario);
+
+	printf("A string %s possui %i caracteres. \n", stringUsuario, num);
+
+	system("pause");
+    return 0;
+}
+
+int tamanhoString(char string[]){
+
+	int numCaracteres = 0;
+
+	while(string[numCaracteres] != '\0'){
+		++numCaracteres;
+	}
+	//++numCaracteres; Caso queira que o contador some o caracter nulo \0
+	return numCaracteres;
+}
+
+//Operador Logico && | Operador Logico ||
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+
+	int idade;
+	
+	printf("sua idade\n");
+	scanf("%i", &idade);
+	
+	// Comando &&  = E
+	// Comando || = ou
+	
+	
+
+	if(idade >= 20 && idade <= 40){
+		printf("deu certo\n");
+	}else{
+		printf("não deu certo\n");	
+	}
+
+	system("pause");
+    return 0;
+}
+
+// Verificar igualdade entre duas Strings
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+
+	_Bool stringsIguais(char s1[], char s2[]);
+	
+	if(stringsIguais("casa", "cosa")) {
+		printf("\t\tsão iguais\n\n");
+	} else {
+		printf("\t\tnão são iguais\n\n");
+	}
+	
+	system("pause");
+    return 0;
+}
+
+_Bool stringsIguais(char s1[], char s2[]){
+	
+	int i = 0;
+	
+	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0'){
+		// c == c && c != \0 && c != \0    palavra casa por isto o c
+		++i;
+	} 
+	if(s1[i] == '\0' && s2[i] == '\0'){
+		return 1;
+	}else{
+		return 0;
+	}
+}
+
+//Obter String do usuário
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+	
+	char nome[20];
+	char sobrenome[20];
+	
+	printf("insira seu nome e sobrenome:\n");
+	scanf("%s%s", &nome, &sobrenome);
+	
+	printf("%s %s\n", nome, sobrenome);
+
+	system("pause");
+    return 0;
+}
+
+//Obter String do usuário | Função getchar
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+	
+	char linha[100];
+	char caractere;
+	int i = 0;
+	
+	do{
+		caractere = getchar();
+		linha[i] = caractere;
+		++i;
+	
+	//Vai pegar o caractere e parar quando o usuário tecla ENTER = '\n' 
+	}while(caractere != '\n');
+	
+	linha[i -1] = '\0';
+	
+	printf("%s\n", linha);	
+
+	system("pause");
+    return 0;
+}
+
+OUTRA FORMA
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+	
+	char palavra[100];
+    printf("DIGITE SEU NOME: ");
+    gets(palavra);
+    printf("\nO NOME DIGITADO FOI >> %s\n\n",palavra);	
+	
+	system("pause");
+    return 0;
+}
+
+// Verificar caracteres alfabeticos / Apenas Letras (logica)
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+    
+    void alfabetico(char variavel);
+	
+	char nome[20];
+	printf("Digite uma palavra: ");
+	scanf("%s", nome);
+	
+	int i = 0;
+	while(nome[i] != '\0') {
+		alfabetico(nome[i]);
+		++i;
+	}	
+
+	system("pause");
+    return 0;
+}
+
+void alfabetico (char variavel){
+	
+	if((variavel >= 'a' && variavel <= 'z') ||
+	   (variavel >= 'A' && variavel <= 'Z')){
+		printf("É uma letra\n");		
+	}else{
+		printf("Não é uma letra\n");
+	}
+	
+}
+
+//Como utilizar o comando break
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+    
+	int i;
+	for(i = 1; i <= 20; ++i){
+		if(i % 3 == 0 && i % 9 == 0){
+			printf("%i divisivel por 3 e 9\n");	
+			break;		
+		}else{
+			printf("%i não é\n", i);	
+		}
+	}
+	
+	getchar();
+    return 0;
+}
+
+//Função system ("pause")
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+    
+	printf("www.facebook.com/DeAlunoParaAluno\n");
+	
+	//Tinha compilador que fechava a janela ao executar o comando printf
+	//Com o comando, a janela abre, e necessita que pressione uma tecla para prosseguir
+	//Windows = Pause  Linux = ls
+	//system("pause");
+	//O recomendado independete do So é usar
+	//Funciona em: Windows, Linux e MAC
+	//Boas praticas, nâo é recomendado utilizar system("pause")
+	getchar();
+    return 0;
+}
+
+//Sequencia de escape
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+    
+	printf("DeAlunoParaAluno\a");
+	
+	/*
+	\a Alarme sonoro do sistema
+	\b Move o cursor uma posição à esquerda
+	\n Pula para a próxima linha
+	\t Tecla TAB
+	\r Volta para o inicio da linha
+	\0 Caractere nulo ou zero, geralmente estabelecido como fim de string
+	\" Corresponde ai caractere "
+	\' Corresponde ao caractere'	
+	*/	
+	
+	getchar();
+    return 0;
+}
+
+//Tabela ASCII
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+    
+		int x = 136;
+		
+		//Tabela ASCII
+		// 97 = a
+		//136 ^		
+				
+		printf("%c ", x);
+	
+	getchar();
+    return 0;
+}
+
+//Revisao Strings e Muitos Outros Tópicos
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+struct dicionario{
+	char palavra[20];
+	char definicao[50];
+};
+
+bool compararStrings(const char palavra1[], const char palavra2[]){
+	
+	int i = 0;
+	while(palavra1[i] == palavra2[i]
+		      && palavra1[i] != '\0'
+		      && palavra2[i] != '\0') {
+		      	++i;
+	}
+	
+	if (palavra1[i] == '\0' && palavra2[i] == '\0'){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+int procurarStrings(const struct dicionario lingua[], const char procurar[], const int numDePalavras){
+	
+	bool compararStrings(const char palavra1[], const char palavra2[]);
+	
+	int i = 0;
+	while (i < numDePalavras){
+		
+		if(compararStrings(procurar, lingua[i].palavra)){
+			return i;
+		}else{
+			++i;
+		}
+	}
+	return -1;
+}
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+    
+	int procurarStrings(const struct dicionario lingua[], const char procurar[], const int numDePalavras);
+	
+	//Por definição variável constante é escrita em LETRAMAIUSCULA, ou seja, valor não muda!
+	const int NUMERODEDEFINICOES = 7;
+	char palavra[20] = {'\0'};
+	int resultadoPesquisa;
+	
+	//Dependendo com compilador não será permitido a declaração
+	//const struct dicionario portugues[NUMERODEDEFINICOES]  = {{"pao", "Comida de farinha"},
+	const struct dicionario portugues[7]  = {{"pao", "Comida de farinha"},
+															  {"mortadela", "Comida de carne"},
+															  {"feijao", "Comida brasileira"},
+															  {"tropero", "Tipo de feijao"},
+															  {"queijo", "De Minas"},
+															  {"macarronada", "Tipico de vó"},
+															  {"pizza", "Tipico da Italia"}};
+															  
+	printf("\t\t\tDigite uma palavra: ");
+	scanf("%s", palavra);
+	
+	resultadoPesquisa = procurarStrings(portugues, palavra, NUMERODEDEFINICOES);
+	
+	if (resultadoPesquisa != -1){
+		printf("\t\t\tConceito: %s\n", portugues[resultadoPesquisa].definicao);
+	}else{
+		printf("Palavra não encontrada");
+	}
+	
+	getchar();
+    return 0;
+}
+
+//Introducao Ponteiros (teoria)
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+    
+	/*
+	bits = 0 ou 1
+	1 byte = 8bits
+
+	Falando sobre memoria
+	Memoria é organizada em sequencia de bytes ( 8 bits ) ou seja cada endereço na memoria ocupa 1 bytes ( 8bits )
+
+	int x ->  reserva 4 bytes na memoria porque um int ocupa 4 bytes ( 32bits)
+	*/
+	
+	getchar();
+    return 0;
+}
+
+// Introducao Ponteiros (Pratica)
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+    
+	int x = 10;
+	int *ponteiro;
+	ponteiro = &x;
+	
+	int y = 20;
+	*ponteiro = y;
+		
+	printf("%i %i \n", x, y);
+	
+	//Criando um ponteiro
+	//int *ponteiro;
+	//ponteiro = &x;
+	
+	//Valor contido na variavel
+	//printf("Valor da variável X (x): %i\n", x);
+	
+	//Endereço de memoria
+	//printf("Endereço de memória da variavel X (&x): %i\n\n", &x);
+	
+	//Valor contido dentro do endereço de memoria (variavel)
+	//printf("Valor contido dentro do ponteiro (*ponteiro): %i\n", *ponteiro);
+	
+	//Endereço de memoria
+	//printf("Endereço de memória do ponteiro (ponteiro): %i\n", ponteiro);
+	
+	getchar();
+    return 0;
+}
+
+//Ponteiros char, int, double
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+    
+	int x = 10;
+	double y = 20.50;
+	char z = 'a';
+	
+	//Uma forma
+	//int *pX;
+	//pX = &x; //Significa que o endereço de memoria do ponteiro X é igual ao endereço de momória da variavel x
+	
+	//Outra forma
+	int *pX = &x;
+	double *pY = &y;
+	char *pZ = &z;
+	
+	//Somar valores do meu ponteiro
+	double soma = *pX + *pY;
+	
+	//Não dá para somar endereços de memória
+	//double soma = pX + pY;
+	
+	int *resultado;
+	resultado = 6487540;
+	
+	printf("Valor x = %i\n", *resultado);
+	printf("O valor da soma entre ponteiros (pX + pY) é: %.2f\n", soma);
+	printf("Endereço x = %i - Valor x = %i\n", pX, *pX);
+	printf("Endereço y = %i - Valor y = %.2f\n", pY, *pY);
+	printf("Endereço z = %i - Valor z = %c\n", pZ, *pZ);
+	
+	getchar();
+    return 0;
+}
+
+//Ponteiros a Estruturas
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+    
+    struct horario{
+    	int hora;
+    	int minuto;
+    	int segundo;
+	};
+
+	struct horario agora, *depois;
+	depois = &agora;
+	
+	//Uma forma
+	//(*depois).hora = 20;
+	//(*depois).minuto = 20;
+	//(*depois).segundo = 20;
+	
+	//Outra forma
+	depois->hora = 20;
+	depois->minuto = 20;
+	depois->segundo = 20;
+	
+	printf("\t\t\t%i hh: %i mm: %i ss", agora.hora, agora.minuto, agora.segundo);
+
+	getchar();
+    return 0;
+}
+
+//Ponteiros a Estruturas (OPerações Matemáticas
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+    
+    struct horario{
+    	int hora;
+    	int minuto;
+    	int segundo;
+	};
+
+	struct horario agora, *depois;
+	depois = &agora;
+	
+	depois->hora = 20;
+	depois->minuto = 80;
+	depois->segundo = 50;
+
+	int somatorio = 100;
+	
+	struct horario antes;
+	
+	antes.hora = somatorio + depois->segundo;
+	antes.minuto = agora.hora + depois->minuto;
+	antes.segundo = depois->minuto + depois->segundo;
+	
+	printf("\t\t\tEstrutura antes  >>> %i hh: %i mm: %i ss\n", antes.hora, antes.minuto, antes.segundo);
+	printf("\t\t\tEstrutura depois >>>  %i hh:  %i mm:  %i ss\n", agora.hora, agora.minuto, agora.segundo);
+
+	getchar();
+    return 0;
+}
+
+//Estruturas que contem ponteiros
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+  
+    struct horario{
+    	int *pHora;
+    	int *pMinuto;
+    	int *pSegundo;
+    };
+  
+  	struct horario hoje;
+  	
+  	int hora = 200;
+  	int minuto = 300;
+  	int segundo = 400;
+  	
+  	hoje.pHora = &hora;
+  	hoje.pMinuto = &minuto; 
+  	hoje.pSegundo = &segundo; 
+	  
+  	printf("Hora    - %i\n", *hoje.pHora);
+  	printf("Minuto  - %i\n", *hoje.pMinuto);	
+	printf("Segundo - %i\n", *hoje.pSegundo);  
+
+	*hoje.pSegundo = 1000;
+	
+	printf("Segundo - %i\n", *hoje.pSegundo);  
+	  
+	getchar();
+    return 0;
+}
+
+// Passar Ponteiro como parametro de uma Função
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+  
+  	void testeVariavel(int x);
+  	void testePonteiro(int *pX);
+  	int teste = 1;
+  	int *pTeste = &teste;
+  	
+  	//testeVariavel(teste);
+  	
+	//Neste caso passamos o endereço de memória
+	testePonteiro(pTeste);
+	
+	/*
+	função testePonteiro recebe valorPonteiro *pX
+	teste é inicializada com valor = 1
+	valor de ponteiro *pTeste é igual ao conteudo da variavel teste igual a 1
+	*pTeste = 1
+	a função testePonteiro recebe o endereço do ponteiro pTeste
+	Agora a variavel teste é dominada pelo ponteiro pTeste
+	Com isto, quando passamos o valor do ponteiro *pX, e depois ++*pX, ela controla e altera o valor
+	Inicial da varialvel teste = 1 para teste = 2
+	*/  	
+	
+  	printf("%i\n", teste);
+  	  	  
+	getchar();
+    return 0;
+}
+
+void testeVariavel(int x){
+	++x;
+	//testeVariavel de x, é uma variavel independente!
+	//Não é a variavel x la de cima
+	//printf("%i\n", x);
+}
+
+void testePonteiro(int *pX){
+	++*pX;
+}
+
+//Overflow e Underflow (transbordamento)
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+  
+  	//Dá overflow
+	//Não vai compilar  
+ 	//short x = 2147483647;
+ 	//short y = -2147483648;
+ 	
+ 	//Valor limite da variavel
+ 	 int x = 2147483647;
+ 	 int y = -2147483648;
+ 	
+ 	printf("%i\n", x);
+ 	printf("%i\n", y);
+  	  	  
+	getchar();
+    return 0;
+}
+
+
+// Lista concatenada
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+  
+	struct lista {
+		   int valor;
+		   struct lista *proximo;
+	};
+ 	
+ 	struct lista m1, m2, m3;
+ 	struct lista *gancho = &m1;
+ 	
+ 	m1.valor = 10;
+	m2.valor = 20;  
+	m3.valor = 30;
+	
+	m1.proximo = &m2;
+	m2.proximo = &m3;
+	m3.proximo = (struct lista *)0;
+	
+	while(gancho != (struct lista *)0){
+		printf("%i\n", gancho->valor);	
+		gancho = gancho->proximo;
+	}
+	
+	getchar();
+    return 0;
+}
+
+//Lista Concatenada e Função que retorna Ponteiro
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+struct lista{
+	int valor;
+	struct lista *proximo;
+};
+
+struct lista *procurarValor(struct lista *pLista, int valor){
+	
+	while(pLista != (struct lista *)0) {
+		   if(pLista->valor == valor) {
+		   		return(pLista);
+		   } else {
+		   pLista = pLista->proximo;	
+		   }	
+		}
+	return(struct lista *) 0;
+}
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+  
+	struct lista *procurarValor(struct lista *pLista, int valor);
+	struct lista m1, m2, m3;
+	struct lista *resultado, *gancho = &m1;
+	int valor;
+	
+	m1.valor = 5;
+	m2.valor = 10;
+	m3.valor = 15;
+	
+	m1.proximo = &m2;
+	m2.proximo = &m3;
+	m3.proximo = 0;
+	
+	printf("Digite o valor da pesquisa: ");
+	scanf("%i", &valor);
+	
+	resultado = procurarValor(gancho, valor);
+	
+	if(resultado == (struct lista *) 0){
+		printf("Valor não encontrado. \n");		
+	} else {
+		printf("Valor %i encontrado. \n", resultado->valor);
+	}
+	
+	getchar();
+    return 0;
+}
+
+// Pré e Pós incremento/decremento
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+  
+	int x = 1;
+	int y = 0;
+	
+	y = ++x;
+	
+	//y = x++;
+	//x = x + 1;
+	
+	printf("x = %i\n", x);
+	printf("y = %i\n", y);
+	
+	getchar();
+    return 0;
+}
+
+//Ponteiros e Vetores I
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+  
+	int vetor [3] = {1,2,3};
+	//Não é necessário informar o tamanho do ponteiro
+	//Não é necessário passar &vetor
+	//A liunguagem ja interpreta
+	//int *ponteiro = vetor;
+	
+	int *ponteiro = &vetor[2];
+	
+	//Automaticamente o ponteiro aponta para o primeiro valor do vetor
+	printf("%i", *ponteiro);
+	
+	getchar();
+    return 0;
+}
+
+//Ponteiros e Vetores II
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+  
+	int vetor [3] = {1,2,3};
+	
+	//Alterar um valor do vetor atraves do ponteiro
+	int *ponteiro = vetor;
+	*(ponteiro + 1) = 10;//ponteiro na posição 1, passa a ter valor 10
+	printf("%i\n", vetor[1]);
+	
+	//Um vetor ocupa espacços subsequentes de memória: 4, 8, 12, 13
+	
+	//int *ponteiro = &vetor[0];
+	//Incrementou +1 a posição do ponteiro
+	//++ponteiro;//posição 1 valor 2 do vetor
+	//++ponteiro;//posição 2 valor 3 do vetor
+	//printf("%i\n", *ponteiro);
+	
+	//printf("%p\n", ponteiro);
+	//ponteiro = &vetor[1];
+	//printf("%p\n", ponteiro);
+	
+	//ponteiro = &vetor[2];
+	//printf("%p\n", ponteiro);	
+	
+	//int *ponteiro = vetor;
+	//printf("Valor do ponteiro: %i\n", *ponteiro);
+	//printf("Valor do endereço: %p\n",  ponteiro);
+	
+	getchar();
+    return 0;
+}
+
+// Ponteiros Vetores Funções
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int somarVetor(int vetor[], const int n){
+	
+	int soma = 0;
+	int *ponteiro;
+	int *const finalVetor = vetor + n; //ponteiro apontando para o primeiro valor do vetor e com o "+ n", informa a considerar todos os itens do vetor - Todos os membros do Vetor
+	
+	for(ponteiro = vetor; ponteiro < finalVetor; ++ponteiro){
+		soma += *ponteiro;
+	}
+	
+	return soma;	
+}
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+  
+	int somarVetor(int vetor[], const int n);
+	int vetor[10] = {5,5,5,5,5,5,5,5,5,5};
+	
+	printf("A soma dos membros do vetor = %i", somarVetor(vetor, 10));	
+
+	getchar();
+    return 0;
+}
+
+// Copiar uma String utilizando Ponteiros
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+void copiarString(char *copiarDaqui, char *colarAqui){
+	
+	while(*copiarDaqui != '\0') {
+		*colarAqui = *copiarDaqui;	
+		++copiarDaqui;
+		++colarAqui;	
+	}
+	colarAqui = '\0';
+}
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+  
+	void copiarString(char *copiarDaqui, char *colarAqui);
+	
+	char string1[] = "Pão com mortadela";
+	char string2[20];
+	
+	copiarString(string1, string2);
+	printf("%s\n", string2);
+
+	getchar();
+    return 0;
+}
+
+//Comando #define / pre processamento
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+#define SIM 100
+#define NAO -100
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+  
+  	int x;
+  	printf("Digite um número inteiro:");
+  	scanf("%i", &x);
+  	
+  	if(x <=10){
+  		printf("%i", NAO);
+  	} else {
+  	printf("%i", SIM);	
+	}
+
+	getchar();
+    return 0;
+}
+
+//Comando #define / Pre processamento
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+#define PI 3.14159//Variavel passada pelo define, utilize letra MAIUSCULA
+#define NULO 0
+
+double areaCirculo (double raio){
+	return raio * raio * PI;	
+}
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+  
+	double areaCirculo (double raio);
+	double r;
+	int i = 1;//número de vezes que repita o programa
+	
+	while (i != NULO){
+		printf("\t\t\tDigite o raio do circulo:");
+		scanf("%lf", &r);
+		printf("\t\t\tA area do circulo é: %lf\n", areaCirculo(r));
+		--i;
+	}
+	getchar();
+    return 0;
+}
+
+//Porque Utilizar Define / Diretivas De Pre Processamento
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+#define NUMERO_MAXIMO_ALUNOS 1000
+
+void umaFuncao(void){
+	//printf("%i\n", 1000);
+	printf("%i\n", NUMERO_MAXIMO_ALUNOS);
+}
+
+void umaOutraFuncao(void){
+	//printf("%i\n", 1000);
+	printf("%i\n", NUMERO_MAXIMO_ALUNOS);
+}
+
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+  
+  	void umaOutraFuncao(void);
+	void umaFuncao(void);
+		
+	//printf("%i\n", 2000);
+	printf("%i\n", NUMERO_MAXIMO_ALUNOS);
+	
+	umaFuncao();
+	umaOutraFuncao();	
+
+	getchar();
+    return 0;
+}
+
+//Macros
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+#define PI 3.14159
+#define DOIS_PI 2 * PI
+#define AREA_CIRCULO(raio) raio * raio * PI
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+  
+	printf("Valor de PI      : %f\n", PI);
+	printf("Valor de Dois PI : %f\n", DOIS_PI);
+	printf("AREA DO CIRCULO  : %f\n", AREA_CIRCULO(10));
+
+	getchar();
+    return 0;
+}
+
+// Macros Pre processamento
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+//Caso x for maior que y, retorne x, caso não retorne y
+//Ao definir a macro atente para: NOME(), coloque o nome perto dos parenteses
+//Caso contrário dará erro
+#define MAIOR(x, y) x > y ? x : y
+#define E_MINUSCULO(char) char >= 'a' && char <= 'z'
+
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+  
+	char x = 'a';
+	
+	if(E_MINUSCULO (x)) {
+		printf("É uma letra minuscula\n");		
+	}else{
+		printf("Não é uma letra minuscula\n");
+	}
+	
+	printf("%i\n", MAIOR(10,50));
+	
+	getchar();
+    return 0;
+}
+
+//Por que pre processamento
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+
+//Não pode colocar ; depois da variavel, dá erro!
+#define PI 3.14159
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+  
+	printf("%f\n", PI);
+
+	getchar();
+    return 0;
+}
+
+//Manipulação de arquivos txt em C / Escrever dados
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+ 
+ 	FILE *file;
+	
+	//para ler (r)
+	//para escrever (w)
+	//para alterar (a)
+	//É necessário acrescentar mais uma barra no diretório, para que o complilador entenda	 
+	file = fopen("D:\\TI\\Cursos\\C\\ManipulacaoDeArquivosTxtEscreverDados\\teste.txt", "w" ); 
+	fprintf(file, "Pão com mortadela.");
+	fclose(file);
+
+    return 0;
+}
+
+//Manipulacao de arquivos txt em c / Ler dados
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+ 
+ 	FILE *file;
+	
+	//para ler (r)
+	//para escrever (w)
+	//para alterar (a)
+	//É necessário acrescentar mais uma barra no diretório, para que o complilador entenda
+		 
+	file = fopen("numero.txt", "r" ); 
+	
+	//O programa verifica se encontrou o arquivo apontado
+	//Caso não exista, encerrerá o programa 
+	if(file == NULL){
+		printf("Arquivo não pode ser aberto\n");
+		system("pause");
+		return 0;		
+	}
+	
+	int x, y, z;
+	
+	//função fscanf
+	//Informar o nome do ponteiro, que no caso é file
+	fscanf(file, "%i  %i  %i", &x, &y, &z);
+	
+	printf("%i  %i  %i\n", x, y, z);
+	
+	fclose(file);
+	system("pause");
+    return 0;
+}
+
+///Manipulacao de arquivos txt em c / Ler dados I
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+ 
+ 	FILE *file;
+	
+	//para ler (r)
+	//para escrever (w)
+	//para alterar (a)
+	//É necessário acrescentar mais uma barra no diretório, para que o complilador entenda
+		 
+	file = fopen("string.txt", "r" ); 
+	
+	//O programa verifica se encontrou o arquivo apontado
+	//Caso não exista, encerrerá o programa 
+	if(file == NULL){
+		printf("Arquivo não pode ser aberto\n");
+		getchar();
+		exit(0);		
+	}
+	
+	char frase[100];
+	
+	while(fgets(frase, 100, file) != NULL){
+		printf("%s", frase);
+	}
+	
+	printf("\n");
+	fclose(file);
+	system("pause");
+    return 0;
+}
+
+//Manipulação de arquivos txt em c / incluir dados
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+ 
+ 	FILE *file;
+	
+	//para ler (r)
+	//para escrever (w)
+	//para alterar (a)
+	//É necessário acrescentar mais uma barra no diretório, para que o complilador entenda
+		 
+	file = fopen("string.txt", "a" ); 
+	
+	//O programa verifica se encontrou o arquivo apontado
+	//Caso não exista, encerrerá o programa 
+	if(file == NULL){
+		printf("Arquivo não pode ser aberto\n");
+		getchar();
+		exit(1);		
+	}
+	
+	fprintf(file, "Primeira Linha\n");
+	
+	char frase[] = "Segunda linha";
+	fputs(frase, file);
+	
+	char caractere = '3';
+	
+	fputc(caractere, file);
+
+	fclose(file);
+	
+	system("pause");
+    return 0;
+}
+
+// Copiar conteudo de arquivo txt em outro
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+void copiarConteudo(FILE *file1, FILE *file2){
+	
+	char leitor [1000];
+	
+	while (fgets(leitor, 1000, file1) != NULL)
+	
+	fputs(leitor, file2);
+}
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+ 
+ 	void copiarConteudo(FILE *file1, FILE *file2);
+ 	
+	//para ler (r) // escrever (w) //para alterar (a)
+	//É necessário acrescentar mais uma barra no diretório, para que o complilador entenda
+		 
+	FILE *file1 = fopen("Arquivo1.txt", "r" );  
+	
+	//O programa verifica se encontrou o arquivo apontado
+	//Caso não exista, encerrerá o programa 
+	if(file1 == NULL){
+		printf("Arquivo não pode ser aberto\n");
+		return 1;		
+	}
+	
+	FILE *file2 = fopen("Arquivo2.txt", "w");  
+	
+	copiarConteudo(file1, file2);
+		
+	fclose(file1);
+	fclose(file2);
+	
+	return 0;
+}
+
+// Funcções freopen e fgets / stdin
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+ 
+ 	char x[100];
+ 	
+ 	fgets(x, 100, stdin);
+ 	printf("%s", x);
+ 		
+ 	freopen("Arquivo1.txt", "r", stdin);
+ 	fgets(x, 100, stdin);
+ 	printf("%s", x);	 
+	 	
+	return 0;
+}
+
+//Funções Freopen e Fgets / stdin Parte 2
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+ 
+ 	char x[100];
+ 	
+ 	FILE *file = fopen("Arquivo1.txt", "r");
+ 	
+ 	fgets(x, 100, file);
+ 	printf("%s\n", x);
+ 	
+ 	freopen("Arquivo2", "r", file);
+ 	fgets(x, 100, file);
+ 	printf("%s\n", x);
+ 	 	
+	return 0;
+}
+
+// Funcoes Fgets e getc
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+ 
+	char x[100];
+	
+	int i = 0;
+	while ((x[i] = fgetc(stdin)) != '\n'){
+		++i;
+	}
+	
+	x[++i] = '\0';
+	printf("%s", x);
+	
+	//x[0] = fgetc(stdin);
+	//printf("%c", x[0]);
+	 	 	
+	return 0;
+}
+
+// Funcoes Fgets e getc (parte II)
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(void){
+
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+ 
+	char x[100];
+	
+	FILE *file = fopen("Arquivo1.txt", "r");
+	
+	int i = 0;
+	
+	//EOF: End of file: Final do arquivo
+	//while ((x[i] = fgetc(file)) != EOF){
+	while ((x[i] = getc(file)) != EOF){
+		++i;
+	}
+	
+	x[i] = '\0';
+	printf("%s", x);
+	
+ 	return 0;
+}
+
+//Funcoes fputc e putc
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(int argc, char *argv[]) {
+	
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+	
+	char x[] = "coxinha";
+	
+	FILE *file = fopen("Arquivo1.txt", "w");
+	
+	int i = 0;
+	while (x[i] != '\0') {
+		putc(x[i], file);
+			++i;
+	}
+	
+	//int i = 0;
+	//while (x[i] != '\0') {
+	//	putc(x[i], stdout);
+	//		++i;
+	//}
+	
+	//Para escrever no arquivo TXT
+	//putc(x[5], file);
+	
+	//Para mostra na janela do Sistema Operacional
+	//putc(x[5], stdout);
+	//putc('a', stdout);	
+	
+	return 0;
+}
+
+//Função gets (aprenda como utilizar e porque não utilizar)
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(int argc, char *argv[]) {
+	
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+	
+	char x[10];
+	char y[10];
+	
+	//Tem que tomare cuidado
+	//O vetor foi declarado com tamanho 10
+	//Gets permite digitar quantos caracteres quiser
+	//Não recomendado	
+	gets(x);
+	
+	printf("%s", x);
+				
+	return 0;
+}
+
+// Função puts
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(int argc, char *argv[]) {
+	
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+	
+	//Pula linha automaticamente
+	//puts("Mortadela");
+	//puts("Mortadela");
+	
+	char x[] = "casa";
+	
+	puts(x);
+				
+	return 0;
+}
+
+// Função getchar e Função putchar
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+int main(int argc, char *argv[]) {
+	
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+	
+	//char x[10];
+	
+	//x[0] = getchar();
+	//printf("%c", x[0]);
+	
+	//int i = 0;
+	//while ((x[i] = getchar()) != '\n' && i < 8) {
+	//	++i;
+	//}
+	//
+	//x[++i] = '\0';
+	//
+	//printf("%s", x);
+	
+	char x;
+	
+	while ((x = getchar()) != '\n'){
+		putchar(x);
+	}
+						
+	return 0;
+}
+
+// Limpeza de buffer / Limpar o buffer / O que é buffer
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+void limparBuffer(void){
+	char c;
+	while((c = getchar()) != '\n' && c != EOF);
+}
+
+
+int main(int argc, char *argv[]) {
+	
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+    
+    void limparBuffer(void);
+    
+	char a, b, c;
+	
+	a = getchar();
+	limparBuffer();
+	b = getchar();
+	limparBuffer();
+	c = getchar();
+	limparBuffer();
+	
+	printf("%c", a);
+	printf("%c", b);
+	printf("%c", c);
+						
+	return 0;
+}
+
+//Operador sizeof() / Alocação Dinamica Pt1
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+struct x{
+	int a, b, c;
+};
+
+int main(int argc, char *argv[]) {
+	
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+    
+    struct x estrutura; 
+    
+	//int x;
+	//double y;
+	
+	int vetor[10];
+	
+	printf("Tamanho da Estrutura >>>>>>>>>>>>>>>>>: %li\n", sizeof(estrutura));
+	printf("Tamanho do vetor[10] >>>>>>>>>>>>>>>>>: %li\n", sizeof(vetor));
+	printf("Tamanho de uma variável do tipo INT   : %li\n", sizeof(int));
+	printf("Tamanho de uma variável do tipo DOUBLE: %li\n", sizeof(double));
+	printf("Tamanho de uma variável do tipo FLOAT : %li\n", sizeof(float));
+	printf("Tamanho de uma variável do tipo SHORT : %li\n", sizeof(short));
+
+	return 0;
+}
+
+// Funcao malloc() / Alocação Dinamica II
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+
+int main(void) {
+	
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+    
+    //malloc = memory allocation
+  	int *p = (int *) malloc(sizeof(int));
+  	
+  	//Controle para verificar se o espaço em memoria foi não foi alocado!
+  	if (p == NULL){
+  		printf("Malloc não funcionou");
+	}
+  	
+  	*p = 1000;
+  	
+  	printf("%i", *p);	
+	 
+	return 0;
+}
+
+// Funcao free() / Alocação Dinamica III
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+
+int main(void) {
+	
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+    
+  	int *p = (int *) malloc(sizeof(int));
+  	
+  	//Controle para verificar se o espaço em memoria foi não foi alocado!
+  	if (p == NULL){
+  		printf("Malloc não funcionou");
+	}
+  	
+  	*p = 1000;
+  	
+  	printf("%i", *p);
+	  
+	//O endereço do ponteiro é perdido, mas o conteudo continua como lixo
+	free(p);  	
+	 
+	return 0;
+}
+
+// Funcao calloc() / Alocação Dinamica IV
+
+#include <stdio.h>
+#include <stdlib.h>//biblioteca para utilização da função pause
+#include <locale.h>//biblioteca para acentuação
+#include <stdbool.h>//biblioteca para tipo boolean
+#include <string.h>//biblioteca para tipo string
+
+
+int main(void) {
+	
+	setlocale(LC_ALL, "portuguese");
+    system("color F0");
+    
+    int *p;
+    
+    //Está alocando 10 x 4 = 40 bites de memoria
+    //Caloc inicia o endereço de memória com zero
+  	//p = (int *) calloc(5, sizeof(int));
+	p = (int *) malloc(5 * sizeof(int));
+  	
+  	int i;
+  	for(i = 0; i < 5; ++i){
+  		printf("Endereço de p%i = %p | Valor de p%i = %i\n", i, &p[i], i, *(p+1));
+	  }
+  	
+  	
+  	
+  	//Acessar o primeiro valor
+  	//*p = 10;
+  	
+  	//Acessar o segundo valor
+  	//*(p+1) = 10;
+  	
+  	//p = (int *) malloc(10 * sizeof(int));
+  	
+  	//Print no primeiro valor do ponteiro
+   	//printf("%i\n", *p);
+	
+	//Print no segundo valor do ponteiro
+   	//printf("%i\n", *(p+1));
+   	
+   	//Outra forma de acessar os valores do ponteiro
+   	//printf("%i\n", p[1]);
+
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
