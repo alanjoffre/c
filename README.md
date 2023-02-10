@@ -1,2 +1,2 @@
 # linguagem-c
-Repositório com aprendizado e exercícios: C
+- Repositório com: artigos, aprendizados, exercícios e projetos.
